@@ -1,0 +1,27 @@
+
+
+# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
+.httr-oauth
+
+# Mac OS X
+*.DS_Store
+
+# Data and document
+*.csv
+*.zip
+*.pdf
+*/data
+*/photos
+*.xlsx
+*.xls
+
+# image file
+*.jpg
+*.png
+*.jpeg
+
+# python compiled file
+*.pyc
+
+# Django database file
+db.sqlite3
