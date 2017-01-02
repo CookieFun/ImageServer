@@ -20,6 +20,7 @@ class PhotoList(APIView):
     def post(self, request, format=None):
        serializer = PhotoSerializer(data=request.data)
        print("!")
+       print(serializer.data.get('image'))
        if serializer.is_valid():
            serializer.save()
            return Response(serializer.data, status=status.HTTP_201_CREATED)
@@ -51,9 +52,3 @@ class PhotoDetail(APIView):
         photo = self.get_object(pk)
         photo.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
-
-def show_img(request, path):
-    print(path)
-    return render(request, 'show_img.html', {
-        "img_url": path,
-    })

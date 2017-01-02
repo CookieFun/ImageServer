@@ -19,6 +19,6 @@ def path_name(path):
 
 class MyPhoto(models.Model):
     name = models.CharField(max_length=254, null=True)
-    image = models.ImageField(upload_to=path_name('photos'), max_length=254,null=True)
+    image = models.ImageField(upload_to=path_name(''), max_length=254,null=True)
 
 
