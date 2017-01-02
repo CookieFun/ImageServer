@@ -1,4 +1,4 @@
-from models import MyPhoto
+from app.models import MyPhoto
 from rest_framework import serializers
 
 class PhotoSerializer(serializers.ModelSerializer):
